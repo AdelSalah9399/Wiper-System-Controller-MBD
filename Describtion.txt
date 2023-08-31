@@ -1,0 +1,7 @@
+The Wiper System Controller project involves the development of a Simulink model and the generation of corresponding code. This controller is designed to control the operation of a wiper system, which is commonly used in vehicles to clear the windshield or rear window.
+
+The Simulink model serves as a graphical representation of the wiper system controller, allowing for easy visualization and design of the control logic. It enables the integration of various components such as sensors, actuators, and control algorithms.
+
+Once the Simulink model is complete, the project involves generating code from the model. This code can be implemented on a microcontroller or embedded system to bring the wiper system controller to life. The generated code translates the control logic designed in Simulink into a format that can be executed by the target hardware.
+
+Overall, this project aims to develop a reliable and efficient wiper system controller using Simulink, providing a comprehensive solution for the control of wiper systems in vehicles.
