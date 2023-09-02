@@ -1,11 +1,11 @@
 /*
  * File: ert_main.c
  *
- * Code generated for Simulink model 'Wiper'.
+ * Code generated for Simulink model 'WiperMotorControl'.
  *
  * Model version                  : 1.6
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sat Sep  2 03:35:56 2023
+ * C/C++ source code generated on : Sat Sep  2 04:17:57 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -17,7 +17,7 @@
 
 #include <stddef.h>
 #include <stdio.h>              /* This ert_main.c example uses printf/fflush */
-#include "Wiper.h"                     /* Model's header file */
+#include "WiperMotorControl.h"         /* Model's header file */
 #include "rtwtypes.h"
 
 /*
@@ -50,8 +50,8 @@ void rt_OneStep(void)
   /* Re-enable timer or interrupt here */
   /* Set model inputs here */
 
-  /* Step the model for base rate */
-  Wiper_step();
+  /* Step the model */
+  WiperMotorControl_step();
 
   /* Get model outputs here */
 
@@ -76,7 +76,7 @@ int_T main(int_T argc, const char *argv[])
   (void)(argv);
 
   /* Initialize model */
-  Wiper_initialize();
+  WiperMotorControl_initialize();
 
   /* Attach rt_OneStep to a timer or interrupt service routine with
    * period 0.01 seconds (the model's base sample time) here.  The
